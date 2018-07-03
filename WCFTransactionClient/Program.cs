@@ -14,7 +14,7 @@ namespace WCFTransactionClient
             using (var scope = new TransactionScope(TransactionScopeOption.RequiresNew))
             using (var catalog = new CatalogServiceClient())
             {
-                catalog.AddProduct("Producto 15", new Uri("http://miimage.com"));
+                catalog.AddProduct("Producto 16", new Uri("http://miimage.com"));
                 scope.Complete();
             }
             Console.WriteLine("Terminado");
